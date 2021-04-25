@@ -1,0 +1,30 @@
+<html>
+<head><title>Add Entry Page</title>
+
+    <script> //Javascript
+        function clearFunction(e){
+            if(!confirm("Are you sure you wish to clear the form?"))e.preventDefault();}
+    </script>
+
+</head>
+
+
+<body>
+<h2> Add an entry to Blog!</h2>
+
+<form action="addentry.php" method="post">
+
+<table border=0 cellpadding=5 cellspacing=2>
+<tr><td>Title</td>
+<td><input type = "text" name="title" id="title" size="39" /></td>
+<tr><td>Body</td>
+<td><textarea name="pass" id="pass" rows="10" cols="50"/></textarea></td>
+<tr><td></td><td>
+<input type="submit" value="Add Entry"/>
+<input onclick="clearFunction(event)"  type="reset" value="Clear"/>
+</td>
+
+</form>
+</body>
+
+</html>
